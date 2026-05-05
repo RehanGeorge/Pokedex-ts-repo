@@ -67,3 +67,6 @@ package-lock.json
 
 # Ignore the output of tsc
 dist/
+
+# log files
+*.log
