@@ -53,4 +53,7 @@ export type Location = {
   name: string;
   game_index: number;
   location: { name: string; url: string };
+  pokemon_encounters: {
+    pokemon: { name: string; url: string };
+  }[];
 };
