@@ -14,6 +14,7 @@ export async function commandCatch(state: State, ...args: string[]): Promise<voi
     const catchChance = Math.max(0.1, 1 - pokemon.base_experience / 350);
     if (Math.random() < catchChance) {
         console.log(`${pokemonName} was caught!`);
+        console.log("You may now inspect it with the inspect command.");
         state.pokedex[pokemon.name] = pokemon;
     } else {
         console.log(`${pokemonName} escaped!`);
